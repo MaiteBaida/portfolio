@@ -1,5 +1,12 @@
+import "./styles/partials/_global.scss";
+import HomePage from "./pages/HomePage";
+
 function App() {
-  return <h1>Test</h1>;
+  return (
+    <>
+      <HomePage />
+    </>
+  );
 }
 
 export default App;

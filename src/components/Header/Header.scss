@@ -1,0 +1,16 @@
+@import "../../styles/partials/mixins";
+@import "../../styles/partials/variables";
+
+.header {
+  background-color: $black;
+  height: 3rem;
+  &__nav {
+    display: flex;
+    flex-direction: row;
+    width: 10rem;
+    justify-content: space-between;
+  }
+  &__item {
+    color: $white;
+  }
+}
