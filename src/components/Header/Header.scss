@@ -4,13 +4,22 @@
 .header {
   background-color: $black;
   height: 3rem;
-  &__nav {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  position: fixed;
+  width: 100%;
+  &__list {
     display: flex;
     flex-direction: row;
-    width: 10rem;
     justify-content: space-between;
   }
   &__item {
-    color: $white;
+    color: $silver;
+    padding: 0 1rem;
+    border-right: 2px solid $silver;
+    &--last {
+      border-right: none;
+    }
   }
 }

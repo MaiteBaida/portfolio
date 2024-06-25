@@ -1,2 +1,21 @@
 @import "../../styles/partials/mixins";
 @import "../../styles/partials/variables";
+
+.footer {
+  background-color: $black;
+  height: auto;
+  position: fixed;
+  width: 100%;
+  &__list-item {
+    display: flex;
+    color: $silver;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+  }
+  &__icon {
+    color: $silver;
+    height: 2rem;
+    margin: 0;
+  }
+}

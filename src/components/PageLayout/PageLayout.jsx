@@ -6,7 +6,7 @@ function PageLayout({ children }) {
   return (
     <>
       <Header />
-      <main>{children}</main>
+      <main className="page-layout">{children}</main>
       <Footer />
     </>
   );
