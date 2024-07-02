@@ -1,0 +1,20 @@
+@import "../../styles/partials/mixins";
+@import "../../styles/partials/variables";
+
+.education {
+  background-color: $black;
+  padding: 2rem 1rem;
+  @include tablet {
+    padding: 2rem 1.25rem;
+  }
+  &__header {
+    color: $green;
+    @include txt-mob-sect-header;
+    @include tablet {
+      @include txt-section-header;
+    }
+  }
+  &__txt {
+    color: $white;
+  }
+}

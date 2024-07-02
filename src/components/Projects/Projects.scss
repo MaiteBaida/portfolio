@@ -1,0 +1,10 @@
+@import "../../styles/partials/mixins";
+@import "../../styles/partials/variables";
+
+.projects {
+  background-color: $silver;
+  padding: 2rem 1rem;
+  @include tablet {
+    padding: 2rem 1.25rem;
+  }
+}
