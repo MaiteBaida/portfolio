@@ -21,6 +21,9 @@
     &--last {
       border-right: none;
     }
+    &--selected {
+      color: $green;
+    }
     &:hover {
       color: $green;
     }
