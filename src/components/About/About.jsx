@@ -3,7 +3,7 @@ import profilePic from "../../assets/images/maitebaida.jpeg";
 
 function About() {
   return (
-    <section className="about">
+    <section className="about" id="about">
       <div className="about__container">
         <div className="about__txt-container">
           <h2 className="about__header">About</h2>

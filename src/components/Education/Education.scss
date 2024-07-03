@@ -8,7 +8,7 @@
     padding: 2rem 1.5rem;
   }
   &__container {
-    @include desktop {
+    @include tablet {
       @include max-width;
     }
   }
@@ -23,7 +23,7 @@
     color: $white;
   }
   &__txt {
-    color: $white;
+    color: $silver;
   }
   &__list-item {
     padding-bottom: 1rem;

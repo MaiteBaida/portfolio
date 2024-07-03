@@ -2,7 +2,7 @@ import "./Education.scss";
 
 function Education() {
   return (
-    <section className="education">
+    <section className="education" id="education">
       <div className="education__container">
         <h2 className="education__header">Education</h2>
         <ul>
@@ -23,7 +23,7 @@ function Education() {
                 FAAP - Fundacao Armando Alvares Penteado
               </p>
               <p className="education__txt">Sao Paulo, Brazil</p>
-              <p className="education__txt">2008 - 2012</p>
+              <p className="education__txt">2007 - 2012</p>
             </div>
           </li>
         </ul>

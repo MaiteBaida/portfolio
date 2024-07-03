@@ -15,8 +15,6 @@
     @include tablet {
       display: flex;
       gap: 3rem;
-    }
-    @include desktop {
       @include max-width;
     }
   }
@@ -27,6 +25,7 @@
   &__header {
     color: $green;
     @include txt-mob-sect-header;
+    margin-top: 0;
     @include tablet {
       @include txt-section-header;
       margin-top: 0;

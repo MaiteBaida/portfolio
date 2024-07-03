@@ -5,7 +5,7 @@ import tictactoe from "../../assets/images/tic-tac-toe.png";
 
 function Projects() {
   return (
-    <main className="projects">
+    <main className="projects" id="projects">
       <div className="projects__container">
         <h2 className="projects__header">Projects</h2>
         <ul>

@@ -8,6 +8,7 @@
   align-items: center;
   justify-content: flex-end;
   width: 100%;
+  position: fixed;
   &__list {
     display: flex;
     flex-direction: row;
@@ -19,6 +20,9 @@
     border-right: 2px solid $silver;
     &--last {
       border-right: none;
+    }
+    &:hover {
+      color: $green;
     }
   }
 }
