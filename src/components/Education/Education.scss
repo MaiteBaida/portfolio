@@ -4,6 +4,10 @@
 .education {
   background-color: $black;
   padding: 2rem 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
   @include tablet {
     padding: 2rem 1.25rem;
   }
@@ -14,7 +18,18 @@
       @include txt-section-header;
     }
   }
+  &__subheader {
+    color: white;
+  }
   &__txt {
     color: $white;
+  }
+  &__list-item {
+    padding-bottom: 1rem;
+    border-bottom: 1px solid $silver;
+    &--last {
+      border: none;
+      padding: 1rem 0;
+    }
   }
 }

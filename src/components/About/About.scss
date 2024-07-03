@@ -2,11 +2,12 @@
 @import "../../styles/partials/variables";
 
 .about {
+  background-color: $black;
   min-height: 24rem;
   padding: 2rem 1rem;
-  background-color: $black;
   display: flex;
   justify-content: center;
+  align-items: center;
   @include tablet {
     padding: 2rem 1.25rem;
   }

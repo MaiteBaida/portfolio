@@ -25,3 +25,10 @@ ul {
 a {
   text-decoration: none;
 }
+
+h3 {
+  @include txt-mob-subheader;
+  @include tablet {
+    @include txt-subheader;
+  }
+}
