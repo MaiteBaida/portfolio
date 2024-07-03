@@ -3,7 +3,7 @@ import "./Education.scss";
 function Education() {
   return (
     <section className="education">
-      <div>
+      <div className="education__container">
         <h2 className="education__header">Education</h2>
         <ul>
           <li className="education__list-item">

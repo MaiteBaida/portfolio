@@ -5,11 +5,6 @@ function About() {
   return (
     <section className="about">
       <div className="about__container">
-        <img
-          src={profilePic}
-          alt="professional profile picture"
-          className="about__img"
-        />
         <div className="about__txt-container">
           <h2 className="about__header">About</h2>
           <p className="about__txt">
@@ -27,6 +22,11 @@ function About() {
             software engineering.
           </p>
         </div>
+        <img
+          src={profilePic}
+          alt="professional profile picture"
+          className="about__img"
+        />
       </div>
     </section>
   );

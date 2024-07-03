@@ -12,14 +12,17 @@
     padding: 2rem 1.25rem;
   }
   &__container {
-    max-width: 50rem;
     @include tablet {
       display: flex;
       gap: 3rem;
     }
+    @include desktop {
+      @include max-width;
+    }
   }
   &__img {
     height: 12rem;
+    box-shadow: 10px 10px 20px 0px rgba(0, 0, 0, 0.5);
   }
   &__header {
     color: $green;
@@ -31,10 +34,6 @@
   }
   &__txt {
     color: $white;
-    @include txt-mob-body;
-    @include tablet {
-      @include txt-body;
-    }
     &--green {
       color: $green;
     }

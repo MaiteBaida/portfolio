@@ -4,12 +4,13 @@
 .education {
   background-color: $black;
   padding: 2rem 1rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
   @include tablet {
-    padding: 2rem 1.25rem;
+    padding: 2rem 1.5rem;
+  }
+  &__container {
+    @include desktop {
+      @include max-width;
+    }
   }
   &__header {
     color: $green;
@@ -19,14 +20,14 @@
     }
   }
   &__subheader {
-    color: white;
+    color: $white;
   }
   &__txt {
     color: $white;
   }
   &__list-item {
     padding-bottom: 1rem;
-    border-bottom: 1px solid $silver;
+    border-bottom: 1px solid $green;
     &--last {
       border: none;
       padding: 1rem 0;

@@ -10,6 +10,7 @@
 
 body {
   margin: 0;
+  color: $black;
   @include txt-mob-body;
   @include tablet {
     @include txt-body;
@@ -24,6 +25,7 @@ ul {
 
 a {
   text-decoration: none;
+  color: $black;
 }
 
 h3 {

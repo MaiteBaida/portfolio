@@ -4,7 +4,48 @@
 .projects {
   background-color: $silver;
   padding: 2rem 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
   @include tablet {
     padding: 2rem 1.25rem;
+  }
+  &__container {
+    @include desktop {
+      @include max-width;
+    }
+  }
+  &__header {
+    @include txt-mob-sect-header;
+    @include tablet {
+      @include txt-section-header;
+    }
+  }
+  &__subheader {
+    :hover {
+      scale: 1.2;
+    }
+  }
+  //   &__txt-container {
+  //     max-width: 45rem;
+  //   }
+  &__img {
+    width: 20rem;
+    box-shadow: 10px 10px 20px 0px rgba(0, 0, 0, 0.5);
+  }
+  &__list-item {
+    padding-bottom: 2rem;
+    border-bottom: 1px solid $green;
+    margin-bottom: 2rem;
+    &--last {
+      border: none;
+    }
+  }
+  &__list-box {
+    @include tablet {
+      display: flex;
+      gap: 2rem;
+    }
   }
 }
