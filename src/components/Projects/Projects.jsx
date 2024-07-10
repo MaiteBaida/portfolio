@@ -33,7 +33,10 @@ function Projects() {
             </a>
           </li>
           <li className="projects__list-item">
-            <a href="#" className="projects__list-box">
+            <a
+              href="https://maitebaida.github.io/calculator/"
+              className="projects__list-box"
+            >
               <img
                 src={calculator}
                 alt="calculator project screenshot"
@@ -51,7 +54,10 @@ function Projects() {
             </a>
           </li>
           <li className="projects__list-item projects__list-item--last">
-            <a href="#" className="projects__list-box">
+            <a
+              href="https://maitebaida.github.io/tic-tac-toe/"
+              className="projects__list-box"
+            >
               <img
                 src={tictactoe}
                 alt="tic-tac-toe project screenshot"
