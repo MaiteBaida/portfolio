@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import "./Header.scss";
 
 function Header() {
-  const [selectedItem, setSelectedItem] = useState(" ");
+  const [selectedItem, setSelectedItem] = useState("");
 
   const sections = ["about", "projects", "education"];
 
@@ -53,7 +53,13 @@ function Header() {
               </li>
             </a>
           ))}
-          <li className="header__item header__item--last">Resume</li>
+          <a
+            href={`${process.env.PUBLIC_URL}/resume.pdf`}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <li className="header__item header__item--last">Resume</li>
+          </a>
         </ul>
       </nav>
     </header>
