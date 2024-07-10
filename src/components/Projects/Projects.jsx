@@ -10,7 +10,10 @@ function Projects() {
         <h2 className="projects__header">Projects</h2>
         <ul>
           <li className="projects__list-item">
-            <a href="#" className="projects__list-box">
+            <a
+              href="https://maitebaida.github.io/budgetwise/"
+              className="projects__list-box"
+            >
               <img
                 src={budgetwise}
                 alt="budgetwise project screenshot"
@@ -22,6 +25,7 @@ function Projects() {
                   Designed to help users efficiently manage their finances by
                   categorizing and tracking expenses. A full-stack application.
                 </p>
+                <p className="projects__txt">// Work In Progress</p>
                 <p className="projects__txt">
                   JavaScript | React.js | Node.js | MySQL | HTML5 | CSS
                 </p>
