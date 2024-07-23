@@ -2,14 +2,13 @@
 @import "../../styles/partials/variables";
 
 .hero {
-  position: relative; // Ensure the pseudo-element is positioned correctly
+  position: relative;
   background-image: url("../../assets/images/hero.jpg");
   background-size: cover;
   background-position: center;
   width: 100%;
   height: 28rem;
   padding: 0 1rem;
-
   &::before {
     content: "";
     position: absolute;
@@ -17,39 +16,32 @@
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: rgba(0, 0, 0, 0.5); // Grey overlay with 50% opacity
-    z-index: 1; // Ensure this overlay is behind other content
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1;
   }
-
   &__container {
-    position: relative; // Make sure container content is above the overlay
+    position: relative;
     z-index: 2;
     display: flex;
     flex-direction: column;
-
     @include tablet {
       padding: 0 1.25rem;
       max-width: 70rem;
       margin: 0 auto;
     }
   }
-
   &__name {
     margin-top: 0;
     margin-bottom: 0.25rem;
     color: $white;
-
     @include txt-mob-header;
-
     @include tablet {
       @include txt-header;
     }
-
     &-box {
       border-bottom: 3px solid silver;
       width: 100%;
       margin-top: 5rem;
-
       @include tablet {
         flex-direction: row;
         display: flex;
@@ -57,7 +49,6 @@
         margin-top: 11rem;
       }
     }
-
     &--green {
       color: $green;
 
@@ -66,20 +57,15 @@
       }
     }
   }
-
   &__subtitle {
     color: $white;
-
     @include txt-mob-subheader;
-
     @include tablet {
       @include txt-subheader;
     }
-
     &--green {
       color: $green;
     }
-
     &-box {
       display: flex;
       justify-content: space-between;
